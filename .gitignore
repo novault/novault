@@ -1,0 +1,7 @@
+
+build/
+dist/
+exe/
+novault.egg-info/
+novault/__pycache__/
+
