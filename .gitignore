@@ -2,6 +2,7 @@
 build/
 dist/
 exe/
+__pycache__/
 novault.egg-info/
 novault/__pycache__/
 
