@@ -103,7 +103,7 @@ To produce a wallet invoke ``novault`` with the ``-w`` option. The ``-w`` option
 	Enter description: donations
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
 	1NPLwL9VYBDu6hvkHeR9Tv7XVnDpDqMKQy
-
+    
 	$ novault -cd -w xmr
 	Enter description: donations
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
@@ -115,7 +115,7 @@ At some point you will likely need the private keys of the wallet. ``novalut`` a
 	Enter description: donations
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
 	L2wU8Jo6Qtddi3k4acypUTvYNUZnB89BjPMPyCSUtFYGEtyJDFSv 1NPLwL9VYBDu6hvkHeR9Tv7XVnDpDqMKQy
-
+    
 	$ novault -cd -w xmr spend view address
 	Enter description: donations
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
