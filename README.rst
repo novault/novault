@@ -241,7 +241,11 @@ API
 
 To access ``novault``'s functionality programatically install the module (e.g. using ``pip`` as described in the Installation_ chapter) and include an ``import novault`` statement in your code.
 
-``novault`` exports one constant, ``novault.COINS`` with the list of coins it supports.
+``novault`` exports one constant, ``novault.COINS`` with the list of coins it supports::
+
+    >>> import novault
+    >>> novault.COINS
+    ('btc', 'xmr')
 
 The ``novault`` module exports the following functions.
 
@@ -260,6 +264,13 @@ A general wrapper of all actions. An action is a function that accepts a seed an
 
 Returns the result returned by the action.
 
+**Example**::
+
+    >>> novault.novault( novault.password, b'test', b'mypassword' )
+    {'password': 'HY^nGLs/3Eu!Ioq#BCW', None: 'HY^nGLs/3Eu!Ioq#BCW'}
+    >>> novault.novault( novault.btc, b'test', b'mypassword' )
+    {None: '1Lb4NGg4kJMm82qqoL7AdbahLZXF7YHG9z', 'address': '1Lb4NGg4kJMm82qqoL7AdbahLZXF7YHG9z', 'key': 'Ky31n6uHG6X5pkEeELK9DvsEwBBw7GYxYjNdSiAae3tNUYqsv5Ra'}
+
 novault.mk_seed
 ===============
 
@@ -275,6 +286,12 @@ The seed generation function.
 
 Returns the generated seed.
 
+**Example**::
+
+    >>> from binascii import hexlify
+    >>> hexlify(novault.mk_seed( b'test', b'mypassword', 32 ))
+    b'362c09fea88d6f6c9d8028d976265cc9324ac2795e12626b00c65729a5cd7325'
+
 novault.password
 ================
 
@@ -285,6 +302,12 @@ Generates a password representation from a 16 byte seed.
 *seed* - The seed used for generating the password.
 
 Returns a dictionary with the key 'password'.
+
+**Example**::
+
+    >>> from binascii import unhexlify
+    >>> novault.password(unhexlify(b'362c09fea88d6f6c9d8028d976265cc9'))
+    {'password': 'HY^nGLs/3Eu!Ioq#BCW', None: 'HY^nGLs/3Eu!Ioq#BCW'}
 
 novault.btc
 ===========
@@ -297,6 +320,11 @@ Generates a Bitcoin wallet representation from a 32 byte seed.
 
 Returns a dictionary with the keys 'address' and 'key'.
 
+**Example**::
+
+    >>> novault.btc(unhexlify(b'362c09fea88d6f6c9d8028d976265cc9324ac2795e12626b00c65729a5cd7325'))
+    {None: '1Lb4NGg4kJMm82qqoL7AdbahLZXF7YHG9z', 'address': '1Lb4NGg4kJMm82qqoL7AdbahLZXF7YHG9z', 'key': 'Ky31n6uHG6X5pkEeELK9DvsEwBBw7GYxYjNdSiAae3tNUYqsv5Ra'}
+
 novault.xmr
 ===========
 
@@ -307,6 +335,11 @@ Generates a Monero wallet representation from a 32 byte seed.
 *seed* - The seed used for generating the password.
 
 Returns a dictionary with the keys 'address', 'spend' and 'view'.
+
+**Example**::
+
+    >>> novault.xmr(unhexlify(b'362c09fea88d6f6c9d8028d976265cc9324ac2795e12626b00c65729a5cd7325'))
+    {'view': 'b1c1f02b4782c57b00a918b9232c3f00850f2f204e02fed18c5f60ca7e50ee0a', None: '48SC75jKUDriiHiRsBW5bENxWef37T6yCRVrBNPrCy5JQ5epdHT2epkiJ3FeH4438BBa5C8juFNuLgcSpeRZX2hg4zCmrhD', 'address': '48SC75jKUDriiHiRsBW5bENxWef37T6yCRVrBNPrCy5JQ5epdHT2epkiJ3FeH4438BBa5C8juFNuLgcSpeRZX2hg4zCmrhD', 'spend': '5c841d4474c74abcf0463993b9329e9f324ac2795e12626b00c65729a5cd7305'}
 
 novault.sillyname
 =================
@@ -319,6 +352,11 @@ Generates a silly name representation from a 4 byte seed.
 
 Returns a dictionary with the key 'name'.
 
+**Example**::
+
+    >>> novault.sillyname(unhexlify(b'362c09fe'))
+    {None: 'sweaupjeethr', 'name': 'sweaupjeethr'}
+
 novault.birthdate
 =================
 
@@ -329,6 +367,11 @@ Generates a birth date representation from a 2 byte seed.
 *seed* - The seed used for generating the birth date.
 
 Returns a dictionary with the key 'date'.
+
+**Example**::
+
+    >>> novault.birthdate(unhexlify(b'362c'))
+    {'date': '1980-12-27', None: '1980-12-27'}
 
 Frequently Asked Questions
 **************************
