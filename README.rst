@@ -444,7 +444,7 @@ In order to generate an executable for a platform one must have such a machine (
 Contributing to novault
 ***********************
 
-Please help making ``novault`` better by `reporting
+Please help make ``novault`` better by `reporting
 <https://github.com/novault/novault/issues>`_ any bugs or other issues you encounter.
 
 If you find ``novault`` usefull your donation will be most appreciated:
