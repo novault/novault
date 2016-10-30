@@ -53,7 +53,7 @@ You can copy the executable to a USB drive and run it directly from there, or fr
 As a Python Module
 ==================
 
-This method enables you to use ``novault`` on any Python-supported platform even if a pre-built executable is not available for it. It also enables you to use the ``novault`` API. Install the ``novault`` module using ``pip``::
+This method enables you to use ``novault`` on any Python-supported Linux, Windows, or OSX platform even if a pre-built executable is not available for it. It also enables you to use the ``novault`` API. Install the ``novault`` module using ``pip``::
 
 	$ pip install novault
 
