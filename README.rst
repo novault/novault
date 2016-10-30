@@ -43,7 +43,7 @@ Installation
 Pre-Built Executables
 =====================
 
-1. `Download
+#. `Download
 <https://github.com/novault/novault/releases>`_ the binary file relevant to your machine.
 
 #. Rename the downloaded file from ``novault-version-osname-hardware`` to ``novault.exe`` (on Windows) or ``novault`` (all other operating systems).
