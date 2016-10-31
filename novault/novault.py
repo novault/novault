@@ -43,8 +43,8 @@ from pyperclip import copy as pyperclip_copy
 from pyscrypt import hash as pyscrypt_hash
 
 # local modules
-from ed25519 import B as BASE, encodepoint, l as GROUPGEN, scalarmult
-from Keccak import Keccak
+from novault.ed25519 import B as BASE, encodepoint, l as GROUPGEN, scalarmult
+from novault.Keccak import Keccak
 
 def _b58( value ):
     '''Convert big-endian bytes to a Base58 string'''
