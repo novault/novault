@@ -24,8 +24,6 @@ The currencies currently supported by ``novault`` are `Bitcoin
 
 ``novault`` is available as a Python module for Linux, Windows, and OSX. Linux and Windows users can download a single binary (.exe file) which contains the entire functionality. In addition, ``novault`` exposes an API which can be used by developers to embed the ``novault`` functionality in other programs.
 
-``novault`` is provided under the `MIT License
-<https://github.com/novault/novault/blob/master/LICENSE>`_.
 
 When to Use novault
 ===================
@@ -467,6 +465,20 @@ In order to generate an executable for a platform one must have such a machine (
 <http://www.pyinstaller.org>`_ limitation), and for security reasons I don't accept binary contributions. Therefore the choice of available platforms depends on what I currently have. If you wish to buy me an additional platform then please `get in touch
 <mailto:avnr_ (at) outlook.com>`_.
 
+License
+*******
+
+``novault`` is provided under the `MIT License
+<https://github.com/novault/novault/blob/master/LICENSE>`_. Beyond Python and its standard libraries ``novault`` makes use and depends on the following 3rd party packages, and bundles them in the pre-build binary executables:
+
+- `ecdsa
+<https://github.com/warner/python-ecdsa>`_, licensed under the MIT License.
+
+- `Pyperclip
+<https://github.com/asweigart/pyperclip>`_, licensed under the BSD License.
+
+- `Pyscrypt
+<https://github.com/ricmoo/pyscrypt>`_, licensed under the MIT License.
 
 Contributing to novault
 ***********************
