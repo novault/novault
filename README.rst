@@ -63,9 +63,11 @@ To run ``novault`` as a CLI utility::
 
 Requires Python 3.4.
 
-Under Linux ``novault`` requires either ``xsel`` or ``xclip`` in order to place the results in the clipboard, at least one of them is typically included in the distribution. If not then usually you can install either with a package manager,.e.g., ``sudo apt-get install xclip``. To install ``xsel`` from source::
+Under Linux ``novault`` requires either ``xsel`` or ``xclip`` in order to place the results in the clipboard; typically, at least one of them comes with the Linux distribution. If not then usually you can install either with a package manager,.e.g. ``sudo apt-get install xclip``. To install ``xsel`` from source::
 
     $ wget http://www.vergenet.net/~conrad/software/xsel/download/xsel-1.2.0.tar.gz
+    $ tar -xf xsel-1.2.0.tar.gz
+    $ cd xsel-1.2.0
     $ ./configure
     $ make
     $ sudo make install
