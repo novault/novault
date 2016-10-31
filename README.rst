@@ -427,11 +427,6 @@ Can I use as master password a list of mnemonics?
 
 Yes, the master password is not checked against a maximum length and can contain the space character. The ``novault`` master password should be precise though, unlike some mnemonic implementations that allow mnemonics to be shortened to the first three characters.
 
-Will a mnemonic-list master password make my assets more secure?
-=====================================================================================================
-
-The security of a password is determined by its entropy and not by its representation. So no, the mere use of mnemonics rather than characters doesn't render it more secure.
-
 Can I enter a description and/or master password in non-latin characters?
 =====================================================================================================
 
