@@ -4,8 +4,6 @@ from math import log2
 from sys import maxsize, path
 from platform import system, machine
 
-path.append( '.' )
-path.append( 'novault' )
 from novault import __version__
 
 bits = str( int( log2( maxsize + 1 ) + 1 )) + 'bit'
