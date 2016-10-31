@@ -72,6 +72,23 @@ Under Linux ``novault`` requires either ``xsel`` or ``xclip`` in order to place 
     $ make
     $ sudo make install
 
+Build Your Own Executable
+=========================
+
+This is usefull if you want an executable for an architecture for which pre-built binary executables are not available yet.
+
+`Download
+<https://github.com/novault/novault/releases>`_ the source package, unzip it, and move into the the source directory. Install all dependencies::
+
+    $ python setup.py install
+
+Install `PyInstaller
+<http://www.pyinstaller.org>`_ and build the executable::
+
+    $ pip install pyinstaller
+    $ pyinstaller novault.spec
+
+The executable will be in the ``dist/` directory.
 
 How to Use novault
 ******************
