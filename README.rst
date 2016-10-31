@@ -152,7 +152,7 @@ Web sites often have a practice of requiring users to provide answers to "securi
 Birth Date Generator
 ====================
 
-Web sites often ask you for your date of birth under the pretence of "security". However, giving away your real birth date compromises your privacy and security, and should be avoided except when there is no other choice (e.g., when dealing with regulated financial institutions). With ``novaults``'s ``-b`` option you can generate in a reproducible way a unique date of birth for each web site or service::
+Web sites often ask you for your date of birth under the pretence of "security". However, giving away your real birth date compromises your privacy and security, and should be avoided except when there is no other choice (e.g., when dealing with regulated financial institutions). With ``novaults``'s ``-b`` option you can generate in a reproducible way a different date of birth for each web site or service::
 
 	$ novault -cd -b
 	Enter description: myaccount @big-retailer.com
