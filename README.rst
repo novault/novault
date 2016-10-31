@@ -87,7 +87,7 @@ Install `PyInstaller
     $ pip install pyinstaller
     $ pyinstaller novault.spec
 
-The executable will be in the ``dist/` directory.
+The executable will be in the ``dist/`` directory.
 
 How to Use novault
 ******************
