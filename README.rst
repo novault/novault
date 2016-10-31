@@ -464,7 +464,7 @@ License
 *******
 
 ``novault`` is provided under the `MIT License
-<https://github.com/novault/novault/blob/master/LICENSE>`_. Beyond Python and its standard libraries ``novault`` makes use and depends on the following 3rd party packages, and bundles them in the pre-build binary executables:
+<https://github.com/novault/novault/blob/master/LICENSE>`_. Beyond Python and its standard libraries ``novault`` makes use and depends on the following 3rd party packages, and bundles them in the pre-built binary executables:
 
 `ecdsa
 <https://github.com/warner/python-ecdsa>`_, licensed under the MIT License.
