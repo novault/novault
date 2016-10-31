@@ -77,7 +77,7 @@ Build Your Own Executable
 This is usefull if you want an executable for an architecture for which pre-built binary executables are not available yet.
 
 `Download
-<https://github.com/novault/novault/releases>`_ the source package, unzip it, and move into the the source directory. Install all dependencies::
+<https://github.com/novault/novault/releases>`_ the source package, unzip it, and move into the source directory. Install all dependencies::
 
     $ python setup.py install
 
