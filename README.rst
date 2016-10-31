@@ -108,26 +108,26 @@ Wallets
 To produce a wallet invoke ``novault`` with the ``-w`` option. The ``-w`` option accepts as argument the currency for which to produce a wallet, and by default will generate the wallet's address. if the currency is ommited then the wallet defaults to a Bitcoin wallet. Here are two examples::
 
 	$ novault -cd -w btc
-	Enter description: donations
+	Enter description: my shop
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
-	1NPLwL9VYBDu6hvkHeR9Tv7XVnDpDqMKQy
+	13qmztfEvTQLNPcQWuxNJeaQHseW57seYi
     
 	$ novault -cd -w xmr
-	Enter description: donations
+	Enter description: my shop
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
-    41hggNDfBK6UDm3grBvvCBNRjrM85ME686x9trFcfMUDidw6dyLMf3wiypbViJfTr9XpuACGc9FHGRHBUgKH42Wy9gi7uyZ
+    42rMGPw2Mt6CBWC5wWdPE6hnj1rFoz9kUALvw26ynNTKRwEYjStpVBzdGKpi79X2QdXeh1TRcFKgEKVMe7xPpFKAKc4N44B
 
 At some point you will likely need the private keys of the wallet. ``novalut`` allows you to specify in the command line which information to generate about the wallet and at what order. For Bitcoin you can specify ``address`` and ``key`` and for Monero you can specify ``address``, ``spend``, and ``view``. Here are the above two examples, this time showing the private keys followed by the address::
 
 	$ novault -cd -w btc key address
-	Enter description: donations
+	Enter description: my shop
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
-	L2wU8Jo6Qtddi3k4acypUTvYNUZnB89BjPMPyCSUtFYGEtyJDFSv 1NPLwL9VYBDu6hvkHeR9Tv7XVnDpDqMKQy
+	L3ZpKbwm1NNHQcMrtfBZYCEnBjLR7FCQAU759v9YREtBog4HMVM3 13qmztfEvTQLNPcQWuxNJeaQHseW57seYi
     
 	$ novault -cd -w xmr spend view address
-	Enter description: donations
+	Enter description: my shop
 	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
-    8ebca9affd385d6be618a15d66511f11462cd33d8fbeaf1fc9a35fe0b0174d08 e5e6168ac815b127521a4e7311e49c9d16a9c7d58e8fd4683fe747d4f00d8401 41hggNDfBK6UDm3grBvvCBNRjrM85ME686x9trFcfMUDidw6dyLMf3wiypbViJfTr9XpuACGc9FHGRHBUgKH42Wy9gi7uyZ
+    2f6756de5442aa82e0755b93dfcdca7380cdf52995d20740c6b589ba37ddaf06 5d3528c622b60aec74e97b34f8f08fb47de083cb81247086813afaaf1444740d 42rMGPw2Mt6CBWC5wWdPE6hnj1rFoz9kUALvw26ynNTKRwEYjStpVBzdGKpi79X2QdXeh1TRcFKgEKVMe7xPpFKAKc4N44B
 
 Silly Names
 ===========
