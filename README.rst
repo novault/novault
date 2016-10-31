@@ -466,13 +466,13 @@ License
 ``novault`` is provided under the `MIT License
 <https://github.com/novault/novault/blob/master/LICENSE>`_. Beyond Python and its standard libraries ``novault`` makes use and depends on the following 3rd party packages, and bundles them in the pre-build binary executables:
 
-- `ecdsa
+`ecdsa
 <https://github.com/warner/python-ecdsa>`_, licensed under the MIT License.
 
-- `Pyperclip
+`Pyperclip
 <https://github.com/asweigart/pyperclip>`_, licensed under the BSD License.
 
-- `Pyscrypt
+`Pyscrypt
 <https://github.com/ricmoo/pyscrypt>`_, licensed under the MIT License.
 
 Contributing to novault
