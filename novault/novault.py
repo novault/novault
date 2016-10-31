@@ -74,8 +74,8 @@ def placebo( seed = None ):
 def password( seed = None ):
     '''Generate a 128 bit password from seed'''
     if not seed: return 16
-    password = list( b85encode( seed[ :12 ]). decode( 'latin_1' ))
-    pass_len = len( password )  # always 15
+    password = list( b85encode( seed ). decode( 'latin_1' ))
+    pass_len = len( password )  # always 20
     ornament = int. from_bytes( seed[ 12: ], 'little')
     for chr_class in ( '0123456789', 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '.,:[]/' ):
         pass_len += 1
