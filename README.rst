@@ -126,14 +126,14 @@ Wallets
 
 To produce a wallet invoke ``novault`` with the ``-w`` option. The ``-w`` option accepts as argument the currency for which to produce a wallet, and by default will generate the wallet's address. if the currency is ommited then the wallet defaults to a Bitcoin wallet. Here are two examples::
 
-	$ novault -cd -w btc
-	Enter description: my shop
-	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
-	13qmztfEvTQLNPcQWuxNJeaQHseW57seYi
-    
-	$ novault -cd -w xmr
-	Enter description: my shop
-	Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
+    $ novault -cd -w btc
+    Enter description: my shop
+    Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
+    13qmztfEvTQLNPcQWuxNJeaQHseW57seYi
+
+    $ novault -cd -w xmr
+    Enter description: my shop
+    Enter password: %^mY-ma5T3r-PAsSw0rd~~)!'
     42rMGPw2Mt6CBWC5wWdPE6hnj1rFoz9kUALvw26ynNTKRwEYjStpVBzdGKpi79X2QdXeh1TRcFKgEKVMe7xPpFKAKc4N44B
 
 At some point you will likely need the private keys of the wallet. ``novalut`` allows you to specify in the command line which information to generate about the wallet and at what order. For Bitcoin you can specify ``address`` and ``key`` and for Monero you can specify ``address``, ``spend``, and ``view``. Here are the above two examples, this time showing the private keys followed by the address::
