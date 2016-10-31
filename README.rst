@@ -22,7 +22,7 @@ The currencies currently supported by ``novault`` are `Bitcoin
 <https://en.wikipedia.org/wiki/Bitcoin>`_ (BTC) and `Monero
 <https://en.wikipedia.org/wiki/Monero_(cryptocurrency)>`_ (XMR).
 
-``novault`` is available as a Python module on any Python platform. Linux and Windows users can download a single binary (.exe file) which contains the entire functionality. In addition, ``novault`` exposes an API which can be used by developers to embed the ``novault`` functionality in other programs.
+``novault`` is available as a Python module Linux, Windows, and OSX. Linux and Windows users can download a single binary (.exe file) which contains the entire functionality. In addition, ``novault`` exposes an API which can be used by developers to embed the ``novault`` functionality in other programs.
 
 ``novault`` is provided under the `MIT License
 <https://github.com/novault/novault/blob/master/LICENSE>`_.
