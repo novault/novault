@@ -35,7 +35,6 @@ from hashlib import new as hashlib_new
 from itertools import takewhile
 from os import urandom
 from re import match
-from struct import unpack
 from sys import exit
 
 # pypi
@@ -77,7 +76,7 @@ def password( seed = None ):
     if not seed: return 16
     password = list( b85encode( seed[ :12 ]). decode( 'latin_1' ))
     pass_len = len( password )  # always 15
-    ornament = unpack( 'L', seed[ 12: ])[ 0 ]
+    ornament = int. from_bytes( seed[ 12: ], 'little')
     for chr_class in ( '0123456789', 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '.,:[]/' ):
         pass_len += 1
         ornament, pos  = divmod( ornament, pass_len )
@@ -140,7 +139,7 @@ lc, lv = len( consonants ), len( vowels )
 
 def sillyname( seed = None ):
     if not seed: return 4
-    s, r = unpack( 'L', seed )[ 0 ], ''
+    s, r = int. from_bytes( seed, 'little' ), ''
     s, c = divmod( s, lc )
     s, v = divmod( s, lv )
     r += consonants[ c ] + vowels[ v ]
@@ -153,7 +152,7 @@ def sillyname( seed = None ):
 
 def birthdate( seed = None ):
     if not seed: return 2
-    s = unpack( 'H', seed )[ 0 ] & 16383
+    s = int. from_bytes( seed, 'little' ) & 16383
     r = str( date( 1950, 1, 1 ) + timedelta( days = s ))
     return { 'date': r, None: r }
     
