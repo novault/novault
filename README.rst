@@ -469,10 +469,10 @@ License
 `ecdsa
 <https://github.com/warner/python-ecdsa>`_, licensed under the MIT License.
 
-`Pyperclip
+`pyperclip
 <https://github.com/asweigart/pyperclip>`_, licensed under the BSD License.
 
-`Pyscrypt
+`pyscrypt
 <https://github.com/ricmoo/pyscrypt>`_, licensed under the MIT License.
 
 Contributing to novault
