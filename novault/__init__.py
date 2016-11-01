@@ -6,3 +6,4 @@ __all__ = [ 'novault', 'mk_seed', 'password', 'btc', 'xmr', 'COINS', '__version_
 
 with open( path_join( dirname( __file__ ), '__version__' )) as f:
     __version__ = f. read()
+
