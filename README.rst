@@ -412,7 +412,7 @@ Each of the exisiting solutions that I could find had drawbacks that rendered th
 
 - I won't use browser-based solutions as the browser cannot be trusted IMHO with the master password. Note that opening the Network monitor on the Developer Console of a web browser doesn't guarantee to display all the communication between the browser and the network, particularly if the tool being used is installed as an add-on. For example, a naive (?) bug such as sending form data to a search suggestions server would expose the mater password to the entire internet without ever showing on the console.
 
-- Many of the existing solutions use sub-par hashing techniques.
+- Many of the existing solutions use sub-par hashing techniques. Others' hashing is over-verbose and require e.g. entering a name. 
 
 - Many of the existing solutions display their result in clear text. This is not acceptable in many environments where the user is susceptible to prying eyes and security cameras. Results should, by default, be placed in the clipboard.
 
@@ -431,7 +431,7 @@ Yes, the master password is not checked against a maximum length and can contain
 Can I enter a description and/or master password in non-latin characters?
 =====================================================================================================
 
-Yes, you can use any characters in the description and master password. Take care though, when using non-Latin-1 characters, that the shell's code page settings can influence the representation of the string. The same *printed* string entered under different code pages can yield different *binary* strings. To avoid such problems you can either adhere to Latin-1 characters or make sure you always invoke ``novault`` with the same code page (e.g., a UTF-8 generating code page).
+Yes, you can use any characters in the description and master password. Take care though, when using non-Latin-1 characters, that the shell's code page settings can influence the representation of the string. The same *printed* string entered under different code pages can yield different *binary* strings. To avoid such problems you can either adhere to Latin-1 characters or make sure you always invoke ``novault`` with the same code page; since ``novault`` internally converts the strings to UTF-8 it is best advised to use a UTF-8 generating code page whenever using non-Latin-1 characters.
 
 What hashing algorithm is used to derive the seed from the description and master password?
 =====================================================================================================
@@ -447,6 +447,7 @@ What hashing algorithm is used to derive the seed from the description and maste
             pyscrypt_hash( description + S1 + master, master + S2 + description, 1024, 1, 1, 32 ),
             1024, 1, 1, length )
 
+The calls to scrypt use a minimal difficulty in order to make the algorithm usable on weaker platforms such as mobile devices and SBCs.
 
 Can you add support for additional currencies?
 =====================================================================================================
