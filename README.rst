@@ -24,6 +24,8 @@ The currencies currently supported by ``novault`` are `Bitcoin
 
 ``novault`` is available as a Python module for Linux, Windows, and OSX. Linux and Windows users can download a single binary (.exe file) which contains the entire functionality. In addition, ``novault`` exposes an API which can be used by developers to embed the ``novault`` functionality in other programs.
 
+Announcements are available via the ``novault`` Twitter feed `@_novault
+<https://twitter.com/_novault>`_.
 
 When to Use novault
 ===================
