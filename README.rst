@@ -327,7 +327,7 @@ Generates a password representation from a 16 byte seed.
 
 *seed* - The seed used for generating the password.
 
-Returns a dictionary with the key 'password'.
+Returns a dictionary with the key ``password``.
 
 **Example**::
 
@@ -344,7 +344,7 @@ Generates a Bitcoin wallet representation from a 32 byte seed.
 
 *seed* - The seed used for generating the password.
 
-Returns a dictionary with the keys 'address' and 'key'.
+Returns a dictionary with the keys ``address`` and ``key``.
 
 **Example**::
 
@@ -360,7 +360,7 @@ Generates a Monero wallet representation from a 32 byte seed.
 
 *seed* - The seed used for generating the password.
 
-Returns a dictionary with the keys 'address', 'spend' and 'view'.
+Returns a dictionary with the keys ``address``, ``spend`` and ``view``.
 
 **Example**::
 
@@ -376,7 +376,7 @@ Generates a silly name representation from a 4 byte seed.
 
 *seed* - The seed used for generating the silly name.
 
-Returns a dictionary with the key 'name'.
+Returns a dictionary with the key ``name``.
 
 **Example**::
 
@@ -392,7 +392,7 @@ Generates a birth date representation from a 2 byte seed.
 
 *seed* - The seed used for generating the birth date.
 
-Returns a dictionary with the key 'date'.
+Returns a dictionary with the key ``date``.
 
 **Example**::
 
