@@ -1,10 +1,12 @@
 # -*- mode: python -*-
 
 from math import log2
+from os. path import dirname, join as path_join
 from sys import maxsize, path
 from platform import system, machine
 
-from novault import __version__
+with open( 'novault/__version__' ) as f:
+    __version__ = f. read()
 
 bits = str( int( log2( maxsize + 1 ) + 1 )) + 'bit'
 exe_name = '-'. join([ 'novault', __version__, system(). casefold(), machine(). casefold(), bits ])
@@ -14,7 +16,7 @@ block_cipher = None
 a = Analysis(['main.py'],
              pathex=['novault'],
              binaries=None,
-             datas=None,
+             datas=[('novault/__version__','novault')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],

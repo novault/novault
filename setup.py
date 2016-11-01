@@ -1,5 +1,8 @@
+from os. path import dirname, join as path_join
 from setuptools import setup
-from novault import __version__
+
+with open( path_join( dirname( __file__ ), 'novault/__version__' )) as f:
+    __version__ = f. read()
 
 setup(
     name = 'novault',
