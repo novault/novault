@@ -452,15 +452,15 @@ The calls to scrypt use a minimal difficulty in order to make the algorithm usab
 Can you add support for additional currencies?
 =====================================================================================================
 
-Yes, please `get in touch
-<mailto:avnr_ (at) outlook.com>`_.
+Yes, please get in touch at `novault.dev@gmail.com
+<mailto:novault.dev@gmail.com>`_.
 
 Can you add pre-built executables for an additional platform?
 =====================================================================================================
 
 In order to generate an executable for a platform one must have such a machine (this is a `PyInstaller
-<http://www.pyinstaller.org>`_ limitation), and for security reasons I don't accept binary contributions. Therefore the choice of available platforms depends on what I currently have. If you wish to buy me an additional platform then please `get in touch
-<mailto:avnr_ (at) outlook.com>`_.
+<http://www.pyinstaller.org>`_ limitation), and for security reasons I don't accept binary contributions. Therefore the choice of available platforms depends on what I currently have. If you wish to buy me an additional platform then please get in touch at `novault.dev@gmail.com
+<mailto:novault.dev@gmail.com>`_.
 
 License
 *******
@@ -490,5 +490,5 @@ If you find ``novault`` usefull your donation will be most appreciated:
 **xmr** - ``44tLk21kgrQBMAuk41j8LURHxvo96sJfRhXR3ksJALwhrWs2YJK6uPCKbgwPpJcwefdKnZ766QeYbaDCmQ2rV7uBnVXRiz``
 
 **PayPal** - press `here
-<https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=avnr_@outlook.com>`_
+<https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=novault.dev@gmail.com>`_
 
