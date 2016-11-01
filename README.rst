@@ -447,7 +447,7 @@ What hashing algorithm is used to derive the seed from the description and maste
             pyscrypt_hash( description + S1 + master, master + S2 + description, 1024, 1, 1, 32 ),
             1024, 1, 1, length )
 
-The calls to scrypt use a minimal difficulty in order to make the algorithm usable on weaker platforms such as mobile devices and SBCs.
+The calls to scrypt use a low difficulty in order to make the algorithm usable on weaker platforms such as mobile devices and SBCs.
 
 Can you add support for additional currencies?
 =====================================================================================================
