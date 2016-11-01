@@ -187,7 +187,7 @@ def main():
     seed_len = 16 if cli. s and cli. s[ -1 ] is None else cli. s[ -1 ] if cli. s else action()
 
     if cli. R:
-        seed = mk_seed( urandom( seed_len ), urandom( seed_len ), seed_len )
+        seed = mk_seed( urandom( 32 ), urandom( 32 ), seed_len )
         result = action( seed )
     elif cli. S:
         seed = bytes. fromhex( cli. S )
