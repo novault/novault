@@ -7,6 +7,7 @@ with open( path_join( dirname( __file__ ), 'novault/__version__' )) as f:
 setup(
     name = 'novault',
     packages = [ 'novault' ],
+    package_data = { 'novault': [ '__version__' ]},
     version = __version__,
     description = 'Stateless Password Manager and Brain Wallet',
     license = 'MIT',
