@@ -11,9 +11,9 @@ setup(
     description = 'Stateless Password Manager and Brain Wallet',
     license = 'MIT',
     author = 'Avner Herskovits',
-    author_email = 'avnr_ at outlook.com',
-    url = 'https://github.com/avnr/novault',
-    download_url = 'https://github.com/avnr/novault/tarball/' + __version__,
+    author_email = 'novault.dev@gmail.com',
+    url = 'https://github.com/novault/novault',
+    download_url = 'https://github.com/novault/novault/tarball/' + __version__,
     install_requires=[
         'ecdsa >= 0.13',
         'pyperclip >= 1.5.27',
