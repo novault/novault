@@ -154,7 +154,7 @@ At some point you will likely need the private keys of the wallet. ``novalut`` a
 Silly Names
 ===========
 
-Web sites often have a practice of requiring users to provide answers to "security" questions, such as your place of birth and mother's maiden name. If you provide these web sites with your true answers these answers become practically public, often available to thousands of web site employees and subcontractors, and therefore breach your privacy and security. With ``novault``'s ``-n`` option you can generate unique silly names to use as answers to these questions. The silly names are kinda pronouncable, just in case you need to communicate them by voice, e.g. when speaking with a customer service representative. For example::
+Web sites often have a practice of requiring users to provide answers to "security" questions, such as your place of birth and mother's maiden name. If you provide these web sites with your true answers these answers become practically public, often available to thousands of web site employees and subcontractors, and therefore breach your privacy and security. With ``novault``'s ``-n`` option you can generate unique silly names to use as answers to these questions. The silly names are kinda pronounceable, just in case you need to communicate them by voice, e.g. when speaking with a customer service representative. For example::
 
 	$ novault -cd -n
 	Enter description: first pet myaccount @big-retailer.com
