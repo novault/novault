@@ -414,7 +414,7 @@ There are other stateless password managers and brain wallets around, why develo
 
 Each of the exisiting solutions that I could find had drawbacks that rendered them unsuitable for my needs, in particular:
 
-- I won't use browser-based solutions as the browser cannot be trusted IMHO with the master password. Note that opening the Network monitor on the Developer Console of a web browser doesn't guarantee to display all the communication between the browser and the network, particularly if the tool being used is installed as an add-on. For example, a naive (?) bug such as sending form data to a search suggestions server would expose the mater password to the entire internet without ever showing on the console.
+- I won't use browser-based solutions as the browser cannot be trusted IMHO with the master password. Note that opening the Network monitor on the Developer Console of a web browser doesn't guarantee to display all the communication between the browser and the network, particularly if the tool being used is installed as an add-on. For example, a naive (?) bug such as sending form data to a search suggestions server would expose the master password to the entire internet without ever showing on the console.
 
 - Many of the existing solutions use sub-par hashing techniques. Others' hashing is over-verbose and require e.g. entering a name. 
 
