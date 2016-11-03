@@ -26,6 +26,8 @@ The currencies currently supported by ``novault`` are `Bitcoin
 
 Announcements are available via the ``novault`` Twitter feed `@_novault
 <https://twitter.com/_novault>`_.
+Questions, suggestions, opinions and other stuff at ``/r/novault
+<https://www.reddit.com/r/novault>``_.
 
 When to Use novault
 ===================
@@ -454,14 +456,16 @@ The calls to scrypt use a low difficulty in order to make the algorithm usable o
 Can you add support for additional currencies?
 =====================================================================================================
 
-Yes, please get in touch at `novault.dev@gmail.com
+Yes, post in ``/r/novault
+<https://www.reddit.com/r/novault>``_ or get in touch at `novault.dev@gmail.com
 <mailto:novault.dev@gmail.com>`_.
 
 Can you add pre-built executables for an additional platform?
 =====================================================================================================
 
 In order to generate an executable for a platform one must have such a machine (this is a `PyInstaller
-<http://www.pyinstaller.org>`_ limitation), and for security reasons I don't accept binary contributions. Therefore the choice of available platforms depends on what I currently have. If you wish to buy me an additional platform then please get in touch at `novault.dev@gmail.com
+<http://www.pyinstaller.org>`_ limitation), and for security reasons I don't accept binary contributions. Therefore the choice of available platforms depends on what I currently have. If you wish to buy me an additional platform then please post in ``/r/novault
+<https://www.reddit.com/r/novault>``_ or get in touch at `novault.dev@gmail.com
 <mailto:novault.dev@gmail.com>`_.
 
 License
