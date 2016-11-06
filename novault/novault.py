@@ -113,7 +113,7 @@ _keccak_256  = lambda v: Keccak(). Keccak(( len( v ) * 4, v ), 1088, 512, 0x01, 
 _sc_reduce32 = lambda v: _hex( _int( v ) % GROUPGEN )
 _derive_key  = lambda v: _sc_reduce32( _keccak_256( v ))
 _secret2pub  = lambda v: hexlify( encodepoint( scalarmult( BASE, _int( v ))). encode( 'latin_1' )). decode( 'latin_1' )
-_funny_b58   = lambda v: ''. join( _b58( bytes. fromhex( v[ i: i + 16 ])) for i in range( 0, len( v ), 16 ))
+_funny_b58   = lambda v: ''. join( _b58( bytes. fromhex( v[ i: i + 16 ])).rjust( 11 if i < 128 else 7, '1' ) for i in range( 0, 138, 16 ))
 _monero_addr = lambda v: _funny_b58( v + _keccak_256( v )[ :8 ] )
 
 def xmr( seed = None ):
