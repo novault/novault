@@ -493,7 +493,7 @@ If you find ``novault`` usefull your donation will be most appreciated:
 
 **btc** - ``1FE4CtY3qvxu3Yw1yWngTFKe7btXwaU2XZ``
 
-**xmr** - ``44tLk21kgrQBMAuk41j8LURHxvo96sJfRhXR3ksJALwhrWs2YJK6uPCKbgwPpJcwefdKnZ766QeYbaDCmQ2rV7uBnVXRiz``
+**xmr** - ``44tLk21kgrQBMAuk41j8LURHxvo96sJfRhXR3ksJALwh1rWs2YJK6uPCKbgwPpJcwefdKnZ766QeYbaDCmQ2rV7uBnVXRiz``
 
 **PayPal** - press `here
 <https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=novault.dev@gmail.com>`_
