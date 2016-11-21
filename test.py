@@ -26,10 +26,13 @@ tests = (
 
 NAME = 'Test_novault'
 
+def mk_test( t, r ):
+    setattr( globals()[ NAME ], 'test_%s' % count, lambda self: self. assertEqual( novault( *t ), r ))
+
 if __name__ == '__main__':
     globals()[ NAME ], count = type( NAME, ( TestCase, ), {} ), 0
     for t, r in tests:
-        setattr( globals()[ NAME ], 'test_%s' % count, lambda self: self. assertEqual( novault( *t ), r ))
+        mk_test( t,r )
         count += 1
     main()
 
